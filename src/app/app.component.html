@@ -1,0 +1,7 @@
+<app-header></app-header>
+<div class="container">
+  <!-- <app-data></app-data> -->
+  <app-add-note (addEvent)="getNoteItem($event)"></app-add-note>
+  <app-note-list [notes]="noteList" (deleteEvent)="deleteItem($event)"></app-note-list>
+</div>
+<app-footer></app-footer>

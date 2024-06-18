@@ -1,0 +1,11 @@
+<mat-card class="example-card">
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-content>
+      <p>{{note.text}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-fab color="primary" (click)="deleteNote(note.id)"> 
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>

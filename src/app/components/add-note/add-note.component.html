@@ -1,0 +1,14 @@
+<div class="container mt-3">
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Ex. GYM" [(ngModel)]="noteTitle"  name="noteTitle">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Note</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." [(ngModel)]="noteText" name="noteText"></textarea>
+        </mat-form-field>
+        <button  mat-raised-button color="primary" type="button" id="note" (click)="AddNote()">Add</button>
+    </form>
+</div>
